@@ -1,0 +1,16 @@
+<div class="container bg-soft">
+    <form action="/api/clientes/{{registro.id}}" method="post" class="d-flex flex-wrap">
+        <div class="col-4 p-1"><input type="text" value="{{registro.nombre}}" name="nombre" class="form-control"
+                placeholder="{{registro.nombre}}" name=""></div>
+        <div class="col-4 p-1"><input type="text" value="{{registro.apellidos}}" name="apellidos" class="form-control">
+        </div>
+        <div class="col-4 p-1"><input type="text" value="{{registro.direccion}}" name="direccion" class="form-control">
+        </div>
+        <div class="col-4 p-1"><input type="text" value="{{registro.email}}" name="email" class="form-control"></div>
+        <div class="col-4 p-1"><input type="text" value="{{registro.cuota}}" name="cuota" class="form-control"></div>
+        <div class="col-6 p-1"><input type="submit" value="Actualizar" class="form-control bg-primary text-light"></div>
+        <div class="col-6 p-1"><a href="/"><input type="button" value="Cancelar"
+                    class="form-control bg-danger text-light"></a></div>
+
+    </form>
+</div>

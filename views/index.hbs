@@ -1,0 +1,28 @@
+<div class="shadow">
+    <div class="d-flex flex-wrap pt-4 pb-3 p-5 bg-warning text-dark text-start">
+        <h2 class="col-2"><span><a class="fs-10 ps-1 text-secondary" href="/api/clientes/nombre">▲</a></span><a
+                class="fs-10 pe-2 text-secondary" href="/api/clientes/"><span>▼</span></a>Nombre </h2>
+        <h2 class="col-2">Apellidos</h2>
+        <h2 class="col-3">Dirección</h2>
+        <h2 class="col-3">Email</h2>
+        <h2 class="col-1">Cuota</h2>
+        <h2 class="col-1">Opciones</h2>
+    </div>
+
+    <div class="d-flex flex-wrap pt-4 p-5 bg-light align-items-center text-start">
+        {{#each registros}}
+        <p class="col-2">{{nombre}}</p>
+        <p class="col-2">{{apellidos}}</p>
+        <p class="col-3">{{direccion}}</p>
+        <p class="col-3">{{email}}</p>
+        <p class="col-1">{{cuota}} €</p>
+        <p class="col-1"><span><a href="/api/clientes/edit/{{id}}">📝</a></span><span><a
+                    href="/api/clientes/delete/{{id}}"
+                    onclick='return confirm("¿Está seguro que desea eliminar este registro?")'>❌</a></span></p>
+        {{/each}}
+    </div>
+</div>
+
+<div>
+    <a href=" /api/clientes/new"><button class="addButton"> + </button></a>
+</div>

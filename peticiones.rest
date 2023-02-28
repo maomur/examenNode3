@@ -1,0 +1,19 @@
+//Petición Raiz
+GET http://localhost:3330/
+
+###
+//Petición lista de clientes
+GET http://localhost:3330/api/clientes
+
+###
+//Petición Búsqueda por nombre
+
+GET http://localhost:3330/api/clientes/?search=mauricio
+
+###
+//Petición Crear registro
+GET http://localhost:3330/api/clientes/new
+
+###
+POST http://localhost:3330/api/clientes/update/
+
